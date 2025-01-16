@@ -49,7 +49,7 @@ jobs:
           path: build/hdoc
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: build-hdoc
     steps:
       - name: Checkout repo
@@ -78,7 +78,7 @@ jobs:
           path: doc-build/
 
   upload:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: build
 
     permissions:
